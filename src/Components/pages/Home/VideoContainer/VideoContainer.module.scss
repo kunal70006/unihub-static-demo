@@ -1,0 +1,51 @@
+.container {
+  height: 80vh;
+  width: 100%;
+
+  padding: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+}
+
+.txtContainer {
+  margin: 0 0 0 auto;
+  width: 50%;
+}
+
+.bodyContainer {
+  width: 50%;
+  margin: 0 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  button {
+    margin: 5rem auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .txtContainer,
+  .bodyContainer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .container {
+    padding: 5rem 1rem;
+  }
+
+  .txtContainer {
+    width: 50%;
+  }
+
+  .bodyContainer {
+    width: 100%;
+  }
+}

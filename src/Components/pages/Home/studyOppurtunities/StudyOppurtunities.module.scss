@@ -1,0 +1,52 @@
+.study {
+  //height: 500px;
+  padding: 10rem 5rem;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.studyTxt {
+  width: 40%;
+}
+
+.studyGraphs {
+  display: flex;
+  flex-direction: column;
+}
+
+.graph1,
+.graph2,
+.graph3 {
+  display: flex;
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .study {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .studyTxt {
+    width: 100%;
+  }
+
+  .studyGraphs {
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .study {
+    padding: 2rem 0.5rem;
+  }
+
+  .studyGraphs {
+    margin-top: 2rem;
+  }
+}

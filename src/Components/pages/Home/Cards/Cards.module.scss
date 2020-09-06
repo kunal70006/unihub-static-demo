@@ -1,0 +1,42 @@
+.cards {
+  padding: 5rem 0;
+}
+
+.cardContainer {
+  display: flex;
+  margin: 4rem 25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 0 4rem 2rem auto;
+  img {
+    cursor: pointer;
+    height: 250px;
+    width: 250px;
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards {
+    padding: 1rem;
+  }
+
+  .cardContainer {
+    margin: 0 auto;
+  }
+
+  .card {
+    margin: 1rem 2rem;
+    img {
+      height: 150px;
+      width: 150px;
+    }
+  }
+}

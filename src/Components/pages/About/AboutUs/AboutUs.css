@@ -1,0 +1,130 @@
+.aboutUs {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutUs .main {
+  width: 42%;
+  margin: 40px auto 0 auto;
+  vertical-align: middle;
+  padding-top: 70px;
+}
+
+.aboutUs .main h1 {
+  max-width: 80%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 128.2%;
+  margin: 30px auto 60px auto;
+}
+
+.aboutUs .main p {
+  max-width: 85%;
+  margin: auto;
+  text-align: justify;
+  text-justify: distribute;
+  font-size: 18px;
+  line-height: 141.2%;
+  font-weight: normal;
+  -webkit-animation: fadeIn ease-in-out 10s;
+          animation: fadeIn ease-in-out 10s;
+  overflow: hidden;
+}
+
+.aboutUs .main p.shrink {
+  max-height: 200px;
+}
+
+.aboutUs .main p.expand {
+  -webkit-animation: expanded ease 1.1s;
+          animation: expanded ease 1.1s;
+}
+
+@-webkit-keyframes expanded {
+  0% {
+    max-height: 200px;
+  }
+  100% {
+    max-height: 600px;
+  }
+}
+
+@keyframes expanded {
+  0% {
+    max-height: 200px;
+  }
+  100% {
+    max-height: 600px;
+  }
+}
+
+.aboutUs .main .fadeOut {
+  position: relative;
+  bottom: 4em;
+  height: 4em;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, white 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, white 100%);
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0) 0%, white 100%);
+}
+
+.aboutUs .main button {
+  position: relative;
+  left: 7.5%;
+  bottom: 60px;
+  background-color: transparent;
+  border: none;
+}
+
+.aboutUs .image {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 576px;
+  max-width: 576px;
+  width: 35%;
+  margin: 0 auto;
+}
+
+.aboutUs .image img {
+  top: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .aboutUs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .aboutUs .main {
+    width: 100%;
+  }
+  .aboutUs .main p {
+    width: 100%;
+  }
+  .aboutUs .main button {
+    left: 0%;
+    text-align: center;
+  }
+  .aboutUs .image {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=AboutUs.css.map */
